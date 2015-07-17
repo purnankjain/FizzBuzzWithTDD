@@ -7,8 +7,14 @@ public class FizzBuzzTest {
     @Test
     public void fizzForThree() {
         FizzBuzz fb = new FizzBuzz(3);
-        String str = fb.checkFizz();
-        Assert.assertEquals("Fizz",str);
+        boolean isFizz= fb.checkFizz();
+        Assert.assertEquals(true,isFizz);
     }
 
+    @Test
+    public void notFizzForFour(){
+        FizzBuzz fb = new FizzBuzz(4);
+        boolean isFizz= fb.checkFizz();
+        Assert.assertEquals(false,isFizz);
+    }
 }

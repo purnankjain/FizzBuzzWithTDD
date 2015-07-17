@@ -7,7 +7,12 @@ public class FizzBuzz {
         this.x = x;
     }
 
-    public String checkFizz() {
-        return "Fizz";
+    public boolean checkFizz() {
+
+        if(x%3 == 0){
+            return true;
+        }
+
+        return false;
     }
 }
