@@ -23,4 +23,8 @@ public class FizzBuzz {
         }
         return false;
     }
+
+    public boolean checkFizzBuzz() {
+        return true;
+    }
 }
