@@ -54,12 +54,18 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void fizzBuzzForSixteen(){
+    public void notFizzBuzzForSixteen(){
         FizzBuzz fb = new FizzBuzz(16);
         boolean isFizzBuzz = fb.checkFizzBuzz();
         Assert.assertEquals(false,isFizzBuzz);
     }
 
+    @Test
+    public void fizzBuzzForFortyFive(){
+        FizzBuzz fb = new FizzBuzz(45);
+        boolean isFizzBuzz = fb.checkFizzBuzz();
+        Assert.assertEquals(true,isFizzBuzz);
+    }
 
 
 }
