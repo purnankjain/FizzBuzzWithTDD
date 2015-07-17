@@ -32,5 +32,12 @@ public class FizzBuzzTest {
         Assert.assertEquals(true,isBuzz);
     }
 
+    @Test
+    public void notBuzzForSeven(){
+        FizzBuzz fb = new FizzBuzz(7);
+        boolean isBuzz = fb.checkBuzz();
+        Assert.assertEquals(false,isBuzz);
+    }
+
 
 }

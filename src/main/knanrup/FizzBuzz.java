@@ -17,6 +17,10 @@ public class FizzBuzz {
     }
 
     public boolean checkBuzz() {
-        return true;
+
+        if(x%5 == 0){
+            return true;
+        }
+        return false;
     }
 }
