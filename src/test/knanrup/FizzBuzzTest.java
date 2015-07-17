@@ -19,10 +19,17 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void FizzForFifteen(){
+    public void fizzForFifteen(){
         FizzBuzz fb = new FizzBuzz(15);
         boolean isFizz= fb.checkFizz();
         Assert.assertEquals(true,isFizz);
+    }
+
+    @Test
+    public void buzzForFive(){
+        FizzBuzz fb = new FizzBuzz(5);
+        boolean isBuzz = fb.checkBuzz();
+        Assert.assertEquals(true,isBuzz);
     }
 
 
