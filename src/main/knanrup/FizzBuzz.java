@@ -25,6 +25,6 @@ public class FizzBuzz {
     }
 
     public boolean checkFizzBuzz() {
-        return true;
+        return (checkFizz() && checkBuzz());
     }
 }
