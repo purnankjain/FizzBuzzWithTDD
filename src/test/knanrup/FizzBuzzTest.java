@@ -39,5 +39,13 @@ public class FizzBuzzTest {
         Assert.assertEquals(false,isBuzz);
     }
 
+    @Test
+    public void buzzForFifteen(){
+        FizzBuzz fb = new FizzBuzz(15);
+        boolean isBuzz = fb.checkBuzz();
+        Assert.assertEquals(true,isBuzz);
+    }
+
+
 
 }
